@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @show.title %>
+</p>
+
+<p>
+  <strong>Dir:</strong>
+  <%= @show.dir %>
+</p>
+
+<p>
+  <strong>Tvrage:</strong>
+  <%= @show.tvrage_id %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @show.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @show.end_date %>
+</p>
+
+<p>
+  <strong>Running time:</strong>
+  <%= @show.running_time %>
+</p>
+
+<p>
+  <strong>Is on hiatus:</strong>
+  <%= @show.is_on_hiatus %>
+</p>
+
+<p>
+  <strong>Hiatus msg:</strong>
+  <%= @show.hiatus_msg %>
+</p>
+
+<%= link_to 'Edit', edit_show_path(@show) %> |
+<%= link_to 'Back', shows_path %>

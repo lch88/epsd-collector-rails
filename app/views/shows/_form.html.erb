@@ -1,0 +1,49 @@
+<%= form_for(@show) do |f| %>
+  <% if @show.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@show.errors.count, "error") %> prohibited this show from being saved:</h2>
+
+      <ul>
+      <% @show.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :dir %><br>
+    <%= f.text_field :dir %>
+  </div>
+  <div class="field">
+    <%= f.label :tvrage_id %><br>
+    <%= f.number_field :tvrage_id %>
+  </div>
+  <div class="field">
+    <%= f.label :start_date %><br>
+    <%= f.datetime_select :start_date %>
+  </div>
+  <div class="field">
+    <%= f.label :end_date %><br>
+    <%= f.datetime_select :end_date %>
+  </div>
+  <div class="field">
+    <%= f.label :running_time %><br>
+    <%= f.number_field :running_time %>
+  </div>
+  <div class="field">
+    <%= f.label :is_on_hiatus %><br>
+    <%= f.check_box :is_on_hiatus %>
+  </div>
+  <div class="field">
+    <%= f.label :hiatus_msg %><br>
+    <%= f.text_field :hiatus_msg %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

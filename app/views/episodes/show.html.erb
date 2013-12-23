@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @episode.number %>
+</p>
+
+<p>
+  <strong>Season:</strong>
+  <%= @episode.season %>
+</p>
+
+<p>
+  <strong>Episode:</strong>
+  <%= @episode.episode %>
+</p>
+
+<p>
+  <strong>Pcode:</strong>
+  <%= @episode.pcode %>
+</p>
+
+<p>
+  <strong>Air date:</strong>
+  <%= @episode.air_date %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @episode.title %>
+</p>
+
+<p>
+  <strong>Special:</strong>
+  <%= @episode.special %>
+</p>
+
+<p>
+  <strong>Tvrage url:</strong>
+  <%= @episode.tvrage_url %>
+</p>
+
+<p>
+  <strong>Show:</strong>
+  <%= @episode.show_id %>
+</p>
+
+<%= link_to 'Edit', edit_episode_path(@episode) %> |
+<%= link_to 'Back', episodes_path %>

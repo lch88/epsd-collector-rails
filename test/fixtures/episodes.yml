@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  number: 1
+  season: 1
+  episode: 1
+  pcode: MyString
+  air_date: 2013-12-23 14:12:16
+  title: MyString
+  special: MyString
+  tvrage_url: MyString
+  show_id: 1
+
+two:
+  number: 1
+  season: 1
+  episode: 1
+  pcode: MyString
+  air_date: 2013-12-23 14:12:16
+  title: MyString
+  special: MyString
+  tvrage_url: MyString
+  show_id: 1
